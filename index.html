@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tony at Don Ayres Honda</title>
+<meta name="description" content="Tony Chotpornsawat, Sales Consultant at Don Ayres Honda in Fort Wayne, IN. English and Thai. Call or text (260) 363-6305.">
+<meta property="og:title" content="Tony at Don Ayres Honda">
+<meta property="og:description" content="Your next Honda, made simple. Sales Consultant at Don Ayres Honda, Fort Wayne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: one fluid column (max 1240px) with full-bleed bands; white ground, Honda-style blue accent, black for contrast blocks. Single light look by choice. */
+:root{
+  --bg:#ffffff; --ink:#0a0a0a; --muted:#3a3f4a; --soft:#f4f6fa; --tint:#eef2fa; --line:#e3e7ef;
+  --blue:#0b3d91; --blue-hi:#6f9bff; --blue-pale:#dbe5ff; --on-dark:#c9cfdb; --dim:#8e97aa; --field:#15181f; --field-line:#2c3140;
+  --display:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --serif:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --body:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --wrap:1240px; --gut:clamp(16px,5vw,80px);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+[id]{scroll-margin-top:calc(72px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--blue-hi);outline-offset:2px}
+.wrap{max-width:calc(var(--wrap) + 2*var(--gut));margin:0 auto;padding-inline:var(--gut)}
+.band{padding-block:clamp(56px,8vw,104px)}
+.soft{background:var(--soft)}
+.dark{background:var(--ink);color:#fff}
+.blue{background:var(--blue);color:#fff}
+h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.035em;line-height:1;margin:0;text-wrap:balance}
+h1 em,h2 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--blue)}
+.dark h2 em,.prelude h2 em{color:var(--blue-hi)}
+.blue h2 em{color:var(--blue-pale)}
+.sec-label{display:flex;align-items:center;gap:14px;margin-bottom:22px;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.sec-label b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:28px;letter-spacing:0;color:var(--blue);line-height:1}
+.sec-label::after{content:"";flex:1;height:1px;background:var(--line)}
+.dark .sec-label,.blue .sec-label{color:var(--on-dark)}
+.dark .sec-label b{color:var(--blue-hi)}
+.blue .sec-label b{color:#fff}
+.dark .sec-label::after{background:var(--field-line)}
+.blue .sec-label::after{background:rgba(255,255,255,.3)}
+h2{font-size:clamp(40px,5.6vw,72px)}
+h3{margin:0;font-size:20px;line-height:1.3}
+p{margin:0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue)}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:56ch}
+.head-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 40px;margin-bottom:clamp(28px,4vw,48px)}
+.head-row p{color:var(--muted);max-width:44ch}
+.btn{min-height:52px;padding:0 26px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn-black{background:var(--ink);color:#fff}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-white{background:#fff;color:var(--ink)}
+.btn-line-white{border-color:#fff;color:#fff}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.mark{width:38px;height:38px;border-radius:8px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:21px}
+.brand b{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:.5px}
+.brand b span{color:var(--blue)}
+nav.top{display:flex;align-items:center;gap:clamp(16px,2.4vw,32px);font-weight:600;font-size:15px}
+nav.top a{color:var(--ink);text-decoration:none}
+nav.top a:hover{color:var(--blue)}
+nav.top .btn{min-height:44px;padding:0 20px;color:#fff}
+.menu-btn{display:none;width:44px;height:44px;border:0;background:transparent;color:var(--ink);align-items:center;justify-content:center;cursor:pointer}
+#drawer{border-top:1px solid var(--line);background:var(--bg)}
+#drawer a{display:flex;align-items:center;min-height:52px;padding-inline:var(--gut);border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600;font-size:17px}
+#drawer .btn{margin:14px var(--gut) 18px;display:flex;border-bottom:0;color:#fff}
+@media (max-width:1060px){nav.top{display:none}.menu-btn{display:inline-flex}.brand b .last{display:none}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,5vw,72px);align-items:center;padding-block:clamp(40px,6vw,88px)}
+.hero-copy{display:flex;flex-direction:column;gap:24px;min-width:0}
+.hero .eyebrow{display:flex;align-items:center;gap:10px}
+.hero .eyebrow::before{content:"";width:32px;height:2px;background:var(--blue)}
+.hero h1{font-size:clamp(52px,7.6vw,108px);line-height:.95}
+.scroll-cue{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.scroll-cue i{width:1px;height:36px;background:var(--ink);display:block;transform-origin:top;animation:cue 1.8s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(0);transform-origin:bottom}}
+@media (prefers-reduced-motion:reduce){.scroll-cue i{animation:none}}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;font-size:14px;font-weight:600;color:var(--muted)}
+.chips span{padding:7px 14px;border-radius:999px;background:var(--tint)}
+.portrait{position:relative;padding:28px 28px 0 0}
+.portrait::before{content:"";position:absolute;inset:0 0 28px 28px;border-radius:16px;background:var(--blue)}
+.portrait img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:16px}
+@media (max-width:820px){.hero{grid-template-columns:1fr}.portrait{max-width:440px}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 40px;padding-block:32px}
+.stat{display:flex;align-items:baseline;gap:14px}
+.stat b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(36px,4vw,48px);color:var(--blue-hi);min-width:1.6em}
+.stat span{color:var(--on-dark)}
+@media (max-width:760px){.stats{grid-template-columns:1fr;gap:6px;padding-block:22px}}
+
+/* marquee */
+.marquee{background:var(--bg);color:var(--blue);overflow:hidden;border-block:1px solid var(--line)}
+.marquee-track{display:flex;width:max-content;animation:slide 40s linear infinite}
+.marquee-track span{display:flex;align-items:center;gap:28px;padding:22px 14px;font-family:var(--display);font-weight:800;font-size:clamp(24px,3vw,40px);letter-spacing:-.02em;white-space:nowrap}
+.marquee-track span::after{content:"✦";font-size:.5em;color:var(--blue-hi)}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+/* photo band */
+.photo-band{position:relative;height:clamp(320px,42vw,600px);background:var(--ink);overflow:hidden}
+.photo-band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.where{position:absolute;left:var(--gut);right:var(--gut);margin-left:auto;bottom:clamp(16px,4vw,56px);max-width:440px;background:#fff;border-radius:14px;padding:22px 26px;display:flex;flex-direction:column;gap:4px}
+.where .eyebrow{font-size:12px}
+.where b{font-family:var(--display);font-weight:800;font-size:clamp(28px,3vw,40px);line-height:1;letter-spacing:-.03em}
+.where span{color:var(--muted)}
+
+/* cards */
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+@media (max-width:1000px){.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.grid3,.grid4{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:14px;padding:30px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card p{color:var(--muted)}
+.ico{width:52px;height:52px;border-radius:10px;background:var(--tint);color:var(--blue);display:grid;place-items:center}
+
+/* included */
+.inc{background:#fff;color:var(--ink);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.inc .tag{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--blue)}
+.inc p{color:var(--muted);font-size:15px}
+.blue .head-row .sub{font-family:var(--serif);font-style:italic;font-size:30px;color:var(--blue-pale)}
+.fine{margin-top:20px;font-size:13px;color:var(--blue-pale)}
+
+/* steps */
+.step{border-top:3px solid var(--ink);padding-top:20px;display:flex;flex-direction:column;gap:10px}
+.step b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:48px;line-height:1;color:var(--blue)}
+.step p{color:var(--muted)}
+
+/* gallery */
+.gallery{display:flex;flex-direction:column;gap:16px}
+.g-row{display:flex;gap:16px}
+.g-row img{flex:var(--r) 1 0;min-width:0;width:100%;height:auto;aspect-ratio:var(--ar);object-fit:cover;border-radius:14px}
+@media (max-width:760px){.g-row{flex-direction:column;gap:12px}.gallery{gap:12px}.g-row img{flex:none}}
+
+/* prelude */
+.prelude{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}
+.prelude img{width:100%;height:100%;min-height:320px;object-fit:cover;object-position:60% center}
+.prelude .copy{padding:clamp(36px,6vw,80px) var(--gut) clamp(36px,6vw,80px) clamp(28px,5vw,72px);display:flex;flex-direction:column;justify-content:center;gap:20px;min-width:0}
+.prelude .eyebrow{color:var(--blue-hi)}
+.prelude h2{font-size:clamp(52px,6vw,80px)}
+.prelude p{color:var(--on-dark);max-width:40ch}
+@media (max-width:860px){.prelude{grid-template-columns:1fr}.prelude img{height:clamp(220px,50vw,360px);min-height:0}.prelude .copy{padding:36px var(--gut) 48px}}
+
+/* models */
+.models{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+@media (max-width:1100px){.models{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:860px){.models{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.models{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+.model{background:var(--blue);color:#fff;text-decoration:none;border-radius:12px;padding:22px 24px;display:flex;flex-direction:column;gap:4px;min-width:0;transition:transform .15s ease,background .15s ease}
+.model:hover{background:#072a66;transform:translateY(-2px)}
+.model b{font-family:var(--display);font-weight:800;letter-spacing:-.02em;font-size:clamp(24px,2.4vw,32px);line-height:1.05}
+.model span{font-size:13px;color:var(--blue-pale)}
+@media (max-width:560px){.model{padding:16px}}
+.inv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:14px}
+@media (max-width:760px){.inv{grid-template-columns:1fr;gap:10px}}
+.inv a{background:var(--ink);color:#fff;text-decoration:none;border-radius:12px;min-height:96px;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.inv a:hover{background:#22252c}
+.inv b{display:block;font-family:var(--display);font-weight:800;letter-spacing:-.02em;font-size:clamp(28px,3vw,38px);line-height:1}
+.inv small{font-size:14px;color:var(--on-dark)}
+.inv i{font-style:normal;font-size:28px}
+@media (max-width:760px){.inv a{min-height:68px;padding:12px 20px}}
+
+/* reviews */
+.reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:stretch}
+@media (max-width:860px){.reviews{grid-template-columns:1fr}}
+figure.rev{margin:0;background:#fff;border-radius:14px;padding:30px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.stars{display:flex;gap:3px}
+.rev blockquote{margin:0;font-size:16.5px;line-height:1.6;flex-grow:1}
+.rev figcaption b{display:block}
+.rev figcaption span{font-size:13px;color:var(--muted)}
+
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,72px)}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+.contact h2{font-size:clamp(46px,6vw,72px)}
+.contact h2 span{color:var(--blue-hi)}
+.contact .intro{color:var(--on-dark);max-width:40ch;margin-block:20px 24px}
+dl.info{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 20px;margin:0;font-size:17px}
+dl.info dt{color:var(--dim)}
+dl.info dd{margin:0;overflow-wrap:anywhere}
+dl.info a{color:#fff;text-decoration:none}
+dl.info a:hover{text-decoration:underline}
+form{display:flex;flex-direction:column;gap:16px;min-width:0}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:520px){.two{grid-template-columns:1fr}}
+label{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600;color:var(--on-dark)}
+input,select,textarea{width:100%;min-height:52px;border-radius:8px;border:1px solid var(--field-line);background:var(--field);color:#fff;padding:0 16px;font-size:16px;font-family:inherit}
+textarea{padding:14px 16px;resize:vertical;min-height:120px}
+.send{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:520px){.send{grid-template-columns:1fr}}
+.send .btn{width:100%}
+.note{font-size:13px;color:var(--dim)}
+.actionbar{display:none}
+@media (max-width:760px){
+  .actionbar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(10,10,10,.08)}
+  .actionbar .btn{width:100%;min-height:50px}
+  body{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
+}
+footer{border-top:1px solid var(--field-line);margin-top:clamp(40px,6vw,64px);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;font-size:14px;color:var(--dim)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Tony Chotpornsawat, back to top"><span class="mark">T</span><b>TONY <span class="last">CHOTPORNSAWAT</span></b></a>
+    <nav class="top" aria-label="Main">
+      <a href="#why">Why me</a>
+      <a href="#included">Included</a>
+      <a href="#models">Models</a>
+      <a href="#showroom">Showroom</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-blue" href="#contact">Book a test drive</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path id="menuIcon" d="M4 7h16M4 12h16M4 17h16"></path></svg>
+    </button>
+  </div>
+  <nav id="drawer" aria-label="Mobile menu" hidden>
+    <a href="#why">Why me</a>
+    <a href="#included">Included with purchase</a>
+    <a href="#prelude">New Prelude</a>
+    <a href="#models">Models</a>
+    <a href="#showroom">Showroom</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn-black" href="tel:+12603636305">Call (260) 363-6305</a>
+    <a class="btn btn-blue" href="sms:+12603636305" style="margin-top:0">Text (260) 363-6305</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="wrap hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Sales Consultant · Don Ayres Honda</div>
+      <h1>Your next Honda, <em>made simple.</em></h1>
+      <p class="lead">Hi, I'm Tony. I help Fort Wayne drivers find the right Honda — no pressure, straight answers, and a smooth process from first question to handing you the keys.</p>
+      <div class="cta">
+        <a class="btn btn-black" href="tel:+12603636305"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>Call me</a>
+        <a class="btn btn-blue" href="sms:+12603636305"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>Text me</a>
+        <a class="btn btn-line" href="#models">See models</a>
+      </div>
+      <div class="chips"><span>English</span><span>ภาษาไทย</span><span>Fort Wayne, IN</span></div>
+      <a class="scroll-cue" href="#why"><i></i>Scroll</a>
+    </div>
+    <div class="portrait"><img src="img/tony.jpg" alt="Tony Chotpornsawat, Sales Consultant at Don Ayres Honda"></div>
+  </section>
+
+  <div class="marquee" aria-label="Honda models: Civic, Accord, CR-V, HR-V, Passport, Pilot, Odyssey, Ridgeline, Prologue, Prelude"><div class="marquee-track" aria-hidden="true"><span>Civic</span><span>Accord</span><span>CR-V</span><span>HR-V</span><span>Passport</span><span>Pilot</span><span>Odyssey</span><span>Ridgeline</span><span>Prologue</span><span>Prelude</span><span>Civic</span><span>Accord</span><span>CR-V</span><span>HR-V</span><span>Passport</span><span>Pilot</span><span>Odyssey</span><span>Ridgeline</span><span>Prologue</span><span>Prelude</span></div></div>
+
+  <section class="dark">
+    <div class="wrap stats">
+      <div class="stat"><b>15+</b><span>years in hospitality &amp; sales</span></div>
+      <div class="stat"><b>2</b><span>languages — English &amp; Thai</span></div>
+      <div class="stat"><b>1</b><span>point of contact, start to finish</span></div>
+    </div>
+  </section>
+
+  <section class="photo-band" aria-label="Don Ayres Honda showroom">
+    <img src="img/showroom-wide.jpg" alt="The Don Ayres Honda showroom floor with a new CR-V and customer lounge">
+    <div class="where"><span class="eyebrow">Where you'll find me</span><b>Don Ayres Honda</b><span>4740 Lima Rd, Fort Wayne, IN 46808</span></div>
+  </section>
+
+  <section id="why" class="band">
+    <div class="wrap">
+      <div class="sec-label"><b>01</b>Why Tony</div>
+      <div class="head-row"><h2>Why buy with <em>Tony</em></h2><p>I'm not here to hit a sales number. I'm here to help you make a good decision, and drive home in a car you really love.</p></div>
+      <div class="grid4">
+        <div class="card"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M16.2 7.8l-2.1 6.3-6.3 2.1 2.1-6.3z"></path></svg></span><h3>An advisor, not a closer</h3><p>I help you compare models, understand the numbers, and choose what fits your life and budget. You decide. No pressure, no rush.</p></div>
+        <div class="card"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span><h3>A real person, no script</h3><p>Ask me anything and get a straight, honest answer, not a sales pitch. In English or Thai. คุยภาษาไทยได้เลยครับ</p></div>
+        <div class="card"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span><h3>A friend after the sale</h3><p>Questions next month or next year? Just text me. You keep someone you know at Don Ayres Honda.</p></div>
+      <div class="card"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-6h4v6"></path></svg></span><h3>First car or new to the U.S.?</h3><p>Just moved here for work or school, or still building credit? I'll explain every step and help you look at your financing options. ยินดีช่วยคนไทยที่เพิ่งย้ายมาครับ</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="included" class="band blue">
+    <div class="wrap">
+      <div class="sec-label"><b>02</b>Included</div>
+      <div class="head-row"><h2>The Don Ayres <em>difference</em></h2><span class="sub">Included with purchase</span></div>
+      <div class="grid4">
+        <div class="inc"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"></path><path d="M9 12l2 2 4-4"></path></svg></span><h3>1 Year EG Repel™ Paint Protection</h3><span class="tag">On all vehicles</span><p>Keeps the exterior of your vehicle looking and feeling new.</p></div>
+        <div class="inc"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 3v6M12 15v6M3 12h6M15 12h6"></path></svg></span><h3>1 Year Tire Protection*</h3><span class="tag">On all vehicles</span><p>Added peace of mind on the road.</p></div>
+        <div class="inc"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="4.5"></circle><path d="M10.7 12.3L21 2M17 6l3 3M14 9l2 2"></path></svg></span><h3>1 Year Key Replacement*</h3><span class="tag">On all vehicles</span><p>Lost or damaged your key? No problem.</p></div>
+        <div class="inc"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h3l2-2h5l2 2h2v3h2v-2h1v6h-1v-2h-2v3h-3l-2 2H9l-2-2H4z"></path></svg></span><h3>3 Month / 3,000 Mile Powertrain Warranty with A/C Coverage</h3><span class="tag">On eligible pre-owned vehicles*</span><p>Drive with confidence knowing your vehicle is protected.</p></div>
+      </div>
+      <p class="fine">*See dealer for details &amp; exclusions.</p>
+    </div>
+  </section>
+
+  <section id="process" class="band soft">
+    <div class="wrap">
+      <div class="sec-label"><b>03</b>Process</div>
+      <div class="head-row"><h2>How it <em>works</em></h2></div>
+      <div class="grid4">
+        <div class="step"><b>01</b><h3>Reach out</h3><p>Call, text or send a message. Tell me what you drive now and what you need.</p></div>
+        <div class="step"><b>02</b><h3>Pick your match</h3><p>I'll line up a few options — new or pre-owned — that fit your budget.</p></div>
+        <div class="step"><b>03</b><h3>Test drive</h3><p>The car is ready when you arrive. No waiting around.</p></div>
+        <div class="step"><b>04</b><h3>Drive home</h3><p>Simple paperwork, a full walkthrough of your new car, and you're on your way.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="showroom" class="band">
+    <div class="wrap">
+      <div class="sec-label"><b>04</b>Showroom</div>
+      <div class="head-row"><h2>Come see the <em>showroom</em></h2><p>4740 Lima Rd, Fort Wayne. Tell me when you're coming and I'll have your car ready.</p></div>
+      <div class="gallery">
+        <div class="g-row">
+          <img src="img/exterior.jpg" alt="Don Ayres Honda dealership exterior with new Honda CR-Vs" style="--r:1.826;--ar:1600/876" loading="lazy">
+          <img src="img/showroom.jpg" alt="New Civic Si and Accord on the showroom floor" style="--r:1.215;--ar:1050/864" loading="lazy">
+        </div>
+        <div class="g-row">
+          <img src="img/welcome.jpg" alt="Welcome desk with the Honda emblem" style="--r:1.572;--ar:1600/1018" loading="lazy">
+          <img src="img/sign.jpg" alt="Don Ayres sign above the showroom windows" style="--r:1.741;--ar:1565/899" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prelude" class="dark prelude">
+    <img src="img/prelude.jpg" alt="A black Honda Prelude parked outside Don Ayres Honda">
+    <div class="copy">
+      <span class="eyebrow">On the lot now</span>
+      <h2>The new <em>Prelude</em></h2>
+      <p>Hybrid performance in a grand touring coupe. Come see it in person and take it for a drive.</p>
+      <div class="cta"><a class="btn btn-white" href="#contact">Book a test drive</a><a class="btn btn-line-white" href="https://www.donayreshonda.com/new-vehicles/prelude/" target="_blank" rel="noopener">See inventory ↗</a></div>
+    </div>
+  </section>
+
+  <section id="models" class="band">
+    <div class="wrap">
+      <div class="sec-label"><b>05</b>Models</div>
+      <div class="head-row"><h2>Find your <em>Honda</em></h2><a href="#contact" style="font-weight:700">Ask me about availability →</a></div>
+      <div class="models">
+        <a class="model" href="https://www.donayreshonda.com/new-vehicles/civic-sedan/" target="_blank" rel="noopener"><b>Civic</b><span>Compact · Sedan &amp; hatch ↗</span></a>
+        <a class="model" href="https://www.donayreshonda.com/new-vehicles/accord/" target="_blank" rel="noopener"><b>Accord</b><span>Midsize sedan ↗</span></a>
+        <a class="model" href="https://www.donayreshonda.com/new-vehicles/cr-v/" target="_blank" rel="noopener"><b>CR-V</b><span>Compact SUV ↗</span></a>
+        <a class="model" href="https://www.donayreshonda.com/new-vehicles/hr-v/" target="_blank" rel="noopener"><b>HR-V</b><span>Subcompact SUV ↗</span></a>
+        <a class="model" href="https://www.donayreshonda.com/new-vehicles/passport/" target="_blank" rel="noopener"><b>Passport</b><span>Midsize SUV ↗</span></a>
+        <a class="model" href="https://www.donayreshonda.com/new-vehicles/pilot/" target="_blank" rel="noopener"><b>Pilot</b><span>3-row SUV ↗</span></a>
+        <a class="model" href="https://www.donayreshonda.com/new-vehicles/odyssey/" target="_blank" rel="noopener"><b>Odyssey</b><span>Minivan ↗</span></a>
+        <a class="model" href="https://www.donayreshonda.com/new-vehicles/ridgeline/" target="_blank" rel="noopener"><b>Ridgeline</b><span>Pickup truck ↗</span></a>
+        <a class="model" href="https://www.donayreshonda.com/new-vehicles/prologue/" target="_blank" rel="noopener"><b>Prologue</b><span>All-electric SUV ↗</span></a>
+        <a class="model" href="https://www.donayreshonda.com/new-vehicles/prelude/" target="_blank" rel="noopener"><b>Prelude</b><span>Hybrid sport coupe ↗</span></a>
+      </div>
+      <div class="inv">
+        <a href="https://www.donayreshonda.com/new-vehicles/" target="_blank" rel="noopener"><span><b>All new Honda</b><small>Full new inventory</small></span><i aria-hidden="true">↗</i></a>
+        <a href="https://www.donayreshonda.com/used-vehicles/" target="_blank" rel="noopener"><span><b>Pre-owned</b><small>Used inventory</small></span><i aria-hidden="true">↗</i></a>
+        <a href="https://www.donayreshonda.com/used-vehicles/certified-pre-owned-vehicles/" target="_blank" rel="noopener"><span><b>Certified</b><small>Honda Certified Pre-Owned</small></span><i aria-hidden="true">↗</i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="band soft">
+    <div class="wrap">
+      <div class="sec-label"><b>06</b>Reviews</div>
+      <div class="head-row"><h2>What customers <em>say</em></h2><a href="https://maps.app.goo.gl/CgxzpAYVCzHZVcvH8" target="_blank" rel="noopener" style="font-weight:700">Read reviews on Google ↗</a></div>
+      <div class="reviews">
+        <figure class="rev"><div class="stars" role="img" aria-label="5 out of 5 stars"></div><blockquote>“Tony was an absolute pleasure to work with from start to finish. When I went in looking for a car, he immediately stood out for being super nice, approachable, and remarkably chill. Car buying can easily get stressful, but Tony completely took the pressure off. He patiently guided me through every step of the process, made sure I understood everything clearly, and went above and beyond to make sure I was taken care of. If you're looking for someone who is genuine, easygoing, and truly dedicated to helping you get into the right vehicle, I can't recommend Tony enough!”</blockquote><figcaption><b>Tazome Fire</b><span>Google review</span></figcaption></figure>
+        <figure class="rev"><div class="stars" role="img" aria-label="5 out of 5 stars"></div><blockquote>“Thank you Tony for so kindly taking the time to help us find the best new vehicle for our mom. This was a big decision for us. From your pleasant greetings and conversation, to your knowledge of and confidence in the different product lines, to your clear guidance through the paperwork, and even setting up mom’s favorite stations on the radio, you made this a good car buying experience. Thanks again.”</blockquote><figcaption><b>Chris Fairfield</b><span>Google review</span></figcaption></figure>
+        <figure class="rev"><div class="stars" role="img" aria-label="5 out of 5 stars"></div><blockquote>“Tony Chatpornsawat at Don Ayers Honda was absolutely top-notch in showing and selling me my new Civic Sport. The entire experience was smooth, quick and painless. I would advise anyone to use Tony and Don Ayers for their next purchase.”</blockquote><figcaption><b>Roger Finger</b><span>Google review · Civic Sport</span></figcaption></figure>
+        <figure class="rev"><div class="stars" role="img" aria-label="5 out of 5 stars"></div><blockquote>“Tony at Honda helped me and was amazing! He was very necessary and helpful, which all of the staff was great and friendly!”</blockquote><figcaption><b>Samantha Krock</b><span>Google review</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="band dark">
+    <div class="wrap">
+      <div class="sec-label"><b>07</b>Contact</div>
+      <div class="contact">
+        <div>
+          <h2>Let's find <em>your car.</em></h2>
+          <p class="intro">Send a quick message and I'll get back to you the same day.</p>
+          <dl class="info">
+            <dt>Phone</dt><dd><a href="tel:+12603636305">(260) 363-6305</a></dd>
+            <dt>Office</dt><dd><a href="tel:+12603732554">(260) 373-2554</a></dd>
+            <dt>Email</dt><dd><a href="mailto:tony.chotpornsawat@donayres.com">tony.chotpornsawat@donayres.com</a></dd>
+            <dt>Visit</dt><dd>Don Ayres Honda · 4740 Lima Rd, Fort Wayne, IN 46808</dd>
+          </dl>
+        </div>
+        <form id="msgForm" novalidate>
+          <div class="two">
+            <label for="fName">Name<input id="fName" type="text" autocomplete="name"></label>
+            <label for="fPhone">Phone<input id="fPhone" type="tel" autocomplete="tel"></label>
+          </div>
+          <label for="fModel">Model I'm interested in<select id="fModel"><option>Not sure yet</option><option>Civic</option><option>Accord</option><option>CR-V</option><option>HR-V</option><option>Passport</option><option>Pilot</option><option>Odyssey</option><option>Ridgeline</option><option>Prologue</option><option>Prelude</option><option>Pre-owned</option></select></label>
+          <label for="fMsg">Message<textarea id="fMsg" rows="4"></textarea></label>
+          <div class="send">
+            <a class="btn btn-blue" id="sendSms" href="sms:+12603636305">Send as text</a>
+            <a class="btn btn-line-white" id="sendMail" href="mailto:tony.chotpornsawat@donayres.com">Send as email</a>
+          </div>
+          <p class="note">Opens your text or email app with your message ready to send to Tony.</p>
+        </form>
+      </div>
+      <footer><span>© 2026 Tony Chotpornsawat · Sales Consultant at Don Ayres Honda</span><span>Personal page — not the official dealership website</span></footer>
+    </div>
+  </section>
+</main>
+
+<nav class="actionbar" aria-label="Quick contact">
+  <a class="btn btn-black" href="tel:+12603636305"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>Call Tony</a>
+  <a class="btn btn-blue" href="sms:+12603636305"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>Text Tony</a>
+</nav>
+
+<script>
+(function(){
+  var star='<svg width="20" height="20" viewBox="0 0 24 24" fill="#f5b301" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg>';
+  document.querySelectorAll('.stars').forEach(function(el){el.innerHTML=star.repeat(5);});
+
+  var btn=document.getElementById('menuBtn'), drawer=document.getElementById('drawer'), icon=document.getElementById('menuIcon');
+  function setMenu(open){drawer.hidden=!open;btn.setAttribute('aria-expanded',String(open));btn.setAttribute('aria-label',open?'Close menu':'Open menu');icon.setAttribute('d',open?'M6 6l12 12M18 6L6 18':'M4 7h16M4 12h16M4 17h16');}
+  btn.addEventListener('click',function(){setMenu(drawer.hidden);});
+  drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
+  window.addEventListener('resize',function(){if(window.innerWidth>1060)setMenu(false);});
+
+  var f={name:document.getElementById('fName'),phone:document.getElementById('fPhone'),model:document.getElementById('fModel'),msg:document.getElementById('fMsg')};
+  var sms=document.getElementById('sendSms'), mail=document.getElementById('sendMail');
+  function update(){
+    var lines=['Hi Tony,'], who='';
+    if(f.name.value.trim()) who='This is '+f.name.value.trim();
+    if(f.phone.value.trim()) who+=(who?' ':'My number is ')+'('+f.phone.value.trim()+')';
+    if(who) lines.push(who+'.');
+    if(f.model.value!=='Not sure yet') lines.push("I'm interested in the "+f.model.value+'.');
+    if(f.msg.value.trim()) lines.push(f.msg.value.trim());
+    var body=encodeURIComponent(lines.join('\n'));
+    var subj=encodeURIComponent('Honda inquiry'+(f.name.value.trim()?' from '+f.name.value.trim():''));
+    sms.href='sms:+12603636305?&body='+body;
+    mail.href='mailto:tony.chotpornsawat@donayres.com?subject='+subj+'&body='+body;
+  }
+  Object.keys(f).forEach(function(k){f[k].addEventListener('input',update);f[k].addEventListener('change',update);});
+  document.getElementById('msgForm').addEventListener('submit',function(e){e.preventDefault();});
+  update();
+})();
+</script>
+</body>
+</html>
